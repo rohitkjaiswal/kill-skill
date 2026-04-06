@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const handleLogOut=()=>{
     logout();
-    navigate("/login");
+    navigate("/");
    console.log("Logging out...");
   }
 
