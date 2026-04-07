@@ -4,7 +4,7 @@ import { API_PATHS } from "../utils/apiPaths";
 import axiosInstance from "../utils/axiosInstance";
 import Navbar from "../components/Navbar";
 import { BookOpen, ArrowRight ,Briefcase, Clock, Sparkles} from "lucide-react";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 const Dashboard = () => {
   const [sessions, setSessions] = useState([]);
@@ -34,6 +34,8 @@ const Dashboard = () => {
       });
     } catch (error) {
       console.log(error.response);
+      //toast.error("Error creating session. Please try again.");
+      return;
     }
 
     setRole("");
@@ -47,6 +49,7 @@ const Dashboard = () => {
 
   return (
     <div className="max-w-6xl mx-auto p-5">
+      <Toaster/>
       {/* Header */}
       <Navbar />
       <div className="relative mb-10 pb-6 border-b border-slate-100 p-5">
@@ -95,6 +98,7 @@ const Dashboard = () => {
           name="role"
           value={role}
           onChange={(e) => setRole(e.target.value)}
+          required
           className="w-full bg-slate-50 border-none pl-12 pr-4 py-4 rounded-2xl text-slate-700 placeholder:text-slate-400 focus:ring-2 focus:ring-orange-400/20 focus:bg-white transition-all outline-none font-medium"
         />
       </div>
@@ -109,6 +113,7 @@ const Dashboard = () => {
           name="experience"
           value={experience}
           onChange={(e) => setExperience(e.target.value)}
+          required
           className="w-full bg-slate-50 border-none pl-12 pr-4 py-4 rounded-2xl text-slate-700 placeholder:text-slate-400 focus:ring-2 focus:ring-orange-400/20 focus:bg-white transition-all outline-none font-medium"
         />
       </div>

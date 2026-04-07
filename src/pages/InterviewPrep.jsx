@@ -76,7 +76,7 @@ const InterviewPrep = () => {
             <p className="text-xs text-slate-400 font-medium tracking-wide uppercase mb-1">
               Session ID: {id?.slice(0, 8)}
             </p>
-            <h1 className="text-2xl font-bold text-slate-800">
+            <h1 className="text-2xl font-bold text-orange-500">
               Interview Questions
             </h1>
             {!loading && !fetchError && (

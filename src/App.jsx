@@ -9,12 +9,14 @@ import Navbar from "./components/Navbar";
 import MockInterviews from "./pages/MockInterviews";
 import ShareExperienceModal from "./components/ShareExperienceModal";
 import ProfilePage from "./pages/PrfilePage";
+import HowItWorks from "./components/HowItWorks";
 
 const App = () => { 
   return (
     
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/how-it-works" element={<HowItWorks />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/login" element={<Login />} />
       <Route path="/dashboard" element={<Dashboard />} />

@@ -79,7 +79,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-1">
           <MobileNavLink label="Dashboard" active />
-          <MobileNavLink label="Mock Interviews" />
+          <MobileNavLink label="Interviews-experience" />
           <MobileNavLink label="Resources" />
           <MobileNavLink label="Profile Settings" />
           <div className="pt-4 border-t border-slate-100">
@@ -96,7 +96,7 @@ const Navbar = () => {
 // Helper Components for cleaner code
 const NavLink = ({ label, active = false, icon }) => (
   <a 
-    href={label==="Dashboard" ? "/dashboard" : label==="Mock Interviews" ? "/mock-interviews" : label==="Profile Settings" ? "/profile" : "#"}
+    href={label==="Dashboard" ? "/dashboard" : label==="Interviews-experience" ? "/mock-interviews" : label==="Profile Settings" ? "/profile" : "#"}
     className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-all ${
       active 
       ? 'text-orange-600 bg-orange-50' 
