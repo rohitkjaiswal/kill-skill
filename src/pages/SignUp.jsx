@@ -28,7 +28,7 @@ const SignUp = () => {
     <div className="min-h-screen w-full flex bg-white-900 overflow-hidden">
       <Toaster />
 
-      {/* --- Right Side: Registration Form --- */}
+      {/* --- left Side: Registration Form --- */}
       <div className="w-full lg:w-1/2 flex items-center justify-center p-6 bg-white lg:rounded-l-[40px]  z-30">
         <div className="w-full max-w-md">
           {/* Header */}
@@ -114,7 +114,7 @@ const SignUp = () => {
         </div>
       </div>
 
-      {/* --- Left Side: The "Mission" Side (Visual Hook) --- */}
+      {/* --- right Side: The "Mission" Side (Visual Hook) --- */}
       <div className="hidden lg:flex w-1/2 relative flex-col justify-between p-12 overflow-hidden">
         {/* Animated Gradient Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-orange-600/800 via-transparent to-transparent z-0"></div>

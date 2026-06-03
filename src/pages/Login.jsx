@@ -22,6 +22,7 @@ const Login = () => {
       localStorage.setItem("token", res.data.token);
       navigate("/dashboard");
     } catch (error) {
+      console.error("Login failed:", error.response?.data || error.message);
       alert("Access Denied: Please check your credentials.");
     } finally {
       setIsLoading(false);

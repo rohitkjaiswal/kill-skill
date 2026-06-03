@@ -37,7 +37,7 @@ const Navbar = () => {
             {/* Desktop Navigation Links */}
             <div className="hidden md:ml-8 md:flex md:space-x-4">
               <NavLink icon={<LayoutDashboard size={18} />} label="Dashboard" active />
-              <NavLink label="Mock Interviews" />
+              <NavLink label="Interviews-experience" />
               <NavLink label="Resources" />
             </div>
           </div>
@@ -110,7 +110,7 @@ const NavLink = ({ label, active = false, icon }) => (
 
 const MobileNavLink = ({ label, active = false }) => (
   <a 
-    href={label==="Dashboard" ? "/dashboard" : label==="Mock Interviews" ? "/mock-interviews":label==="Profile Settings" ? "/profile" : "#"}
+    href={label==="Dashboard" ? "/dashboard" : label==="Interviews-experience" ? "/mock-interviews":label==="Profile Settings" ? "/profile" : "#"}
     className={`block px-3 py-2 rounded-md text-base font-medium ${
       active ? 'bg-orange-50 text-orange-600' : 'text-slate-600 hover:bg-slate-50'
     }`}

@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:9001/api";
+const BASE_URL = "https://kill-skill-backend.vercel.app/api";
 
 export const API_PATHS = {
   AUTH: {

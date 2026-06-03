@@ -120,14 +120,14 @@ const Dashboard = () => {
 
       <button
         onClick={createSession}
-        className="relative cursor-pointer group overflow-hidden bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:shadow-lg hover:shadow-orange-200 transition-all active:scale-95 duration-200"
+        className="relative cursor-pointer group overflow-hidden bg-slate-500 text-white px-8 py-4 rounded-2xl font-bold hover:shadow-lg hover:shadow-orange-200 transition-all active:scale-95 duration-200"
       >
         <span className="relative z-10 flex items-center justify-center gap-2">
           Initialize Session <ArrowRight></ArrowRight>
         </span>
         
         {/* Hover Slide Effect */}
-        <div className="absolute inset-0 bg-green-500 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300" />
+        <div className="absolute inset-0 bg-green-500 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500 " />
       </button>
     </div>
   </div>

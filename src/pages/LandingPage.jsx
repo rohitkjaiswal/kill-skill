@@ -75,7 +75,7 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Why professionals choose Kill-Skill</h2>
-            <div className="h-1 w-20 bg-orange-500 mx-auto rounded-full"></div>
+            <div className="h-1 w-50 bg-orange-500 mx-auto rounded-full"></div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
